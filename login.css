@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(manzara.jpg);
+    background-size: cover;
+}
+
+.frame
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: black;
+    opacity: 0.7;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.frame h2 {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.frame .inputbox{
+    position: relative;
+}
+
+.frame .inputbox input {
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    margin-bottom: 30px;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+}
+
+.frame .inputbox label {
+    font-size: 15px;
+    position: absolute;
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.frame .subbox input[type=submit] {
+    background: transparent;
+    background-color: blue;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.frame .inputbox input:focus ~ label,
+.frame .inputbox input:valid ~ label
+{
+    top: -18px;
+    font-size: 13px;
+    color: rgba(0, 0, 255, 0.938);
+}
+
+
+
